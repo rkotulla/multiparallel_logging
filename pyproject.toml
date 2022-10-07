@@ -1,6 +1,6 @@
 [project]
-name = "multiparallel_logging"
-version = "0.0.1"
+name = "multiparlog"
+version = "1.0.0"
 authors = [
   { name="Ralf Kotulla", email="ralf.kotulla@gmail.com" },
 ]

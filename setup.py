@@ -5,14 +5,14 @@ from setuptools import setup, find_namespace_packages
 #     long_descr = f.read().decode("utf-8")
 
 setup(
-    name = "multiparallel_logging",
+    name = "multiparlog",
     package_dir = {'': 'src'},
-    packages = ['multiparallel_logging'],
-    # packages = find_namespace_packages(include=['src.multiparallel_logging.*']),
+    packages = ['multiparlog'],
+    # packages = find_namespace_packages(include=['src.multiparlog.*']),
     # entry_points = {
     #     "console_scripts": []
     #     },
-    version = "1.0",
+    version = "1.0.0",
     # description = "A flexible multi-processing safe logging tool",
     # # long_description = long_descr,
     # author = "Ralf Kotulla",
