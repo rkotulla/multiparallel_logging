@@ -1,6 +1,6 @@
 [project]
 name = "multiparlog"
-version = "1.0.0"
+version = "{{VERSION_PLACEHOLDER}}"
 authors = [
   { name="Ralf Kotulla", email="ralf.kotulla@gmail.com" },
 ]
@@ -18,24 +18,26 @@ classifiers = [
 "Homepage" = "https://github.com/rkotulla/multiparallel_logging"
 "Bug Tracker" = "https://github.com/rkotulla/multiparallel_logging/issues"
 
-[tool.bumpver]
-current_version = "1.0.0"
-version_pattern = "MAJOR.MINOR.PATCH"
-commit_message = "bump version {old_version} -> {new_version}"
-commit = true
-tag = true
-push = false
 
-[tool.bumpver.file_patterns]
-"pyproject.toml" = [
-    'current_version = "{version}"',
-]
-"setup.py" = [
-    "{version}",
-    "{pep440_version}",
-]
-"README.md" = [
-    "{version}",
-    "{pep440_version}",
-]
-
+#
+#[tool.bumpver]
+#current_version = "1.0.0"
+#version_pattern = "MAJOR.MINOR.PATCH"
+#commit_message = "bump version {old_version} -> {new_version}"
+#commit = true
+#tag = true
+#push = false
+#
+#[tool.bumpver.file_patterns]
+#"pyproject.toml" = [
+#    'current_version = "{version}"',
+#]
+#"setup.py" = [
+#    "{version}",
+#    "{pep440_version}",
+#]
+#"README.md" = [
+#    "{version}",
+#    "{pep440_version}",
+#]
+#

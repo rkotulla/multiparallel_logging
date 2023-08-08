@@ -12,7 +12,7 @@ setup(
     # entry_points = {
     #     "console_scripts": []
     #     },
-    version = "1.0.0",
+    version = "{{VERSION_PLACEHOLDER}}",
     # description = "A flexible multi-processing safe logging tool",
     # # long_description = long_descr,
     # author = "Ralf Kotulla",
