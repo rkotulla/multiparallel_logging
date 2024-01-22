@@ -1,2 +1,2 @@
 
-from .mplogging import setup_logging, shutdown_logging, log_exception
+from .mplogging import setup_logging, shutdown_logging, report_exception, log_exception
