@@ -1,6 +1,13 @@
+[build-system]
+requires = [
+    "setuptools>=64.0.0",
+]
+build-backend = "setuptools.build_meta"
+
+
 [project]
 name = "multiparlog"
-version = "{{VERSION_PLACEHOLDER}}"
+version = "1.0.5"
 authors = [
   { name="Ralf Kotulla", email="ralf.kotulla@gmail.com" },
 ]
@@ -19,25 +26,12 @@ classifiers = [
 "Bug Tracker" = "https://github.com/rkotulla/multiparallel_logging/issues"
 
 
-#
-#[tool.bumpver]
-#current_version = "1.0.0"
-#version_pattern = "MAJOR.MINOR.PATCH"
-#commit_message = "bump version {old_version} -> {new_version}"
-#commit = true
-#tag = true
-#push = false
-#
-#[tool.bumpver.file_patterns]
-#"pyproject.toml" = [
-#    'current_version = "{version}"',
-#]
-#"setup.py" = [
-#    "{version}",
-#    "{pep440_version}",
-#]
-#"README.md" = [
-#    "{version}",
-#    "{pep440_version}",
-#]
-#
+# dependencies = []
+
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ['src']
+
