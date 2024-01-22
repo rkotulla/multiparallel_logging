@@ -336,14 +336,13 @@ def podi_logger_setup(setup):
 
     return
 
-def report_exception(exception, logger=None, indent_width=8):
+def report_exception(exception, logger=None):
 
-    indent = " "*indent
-    formatted = indent + indent.join(traceback.format_exception(exception))
+    formatted = " ".join(traceback.format_exception(exception))
     if (logger is None):
         logger = logging.getLogger()
 
-    logger.debug("EXCEPTION: ---------------------\n"+formatted)
+    logger.debug("EXCEPTION:\n" + "="*45 + "\n\n"+formatted+"\n"+"="*45)
     return
 
 
