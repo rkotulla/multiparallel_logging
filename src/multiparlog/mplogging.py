@@ -233,7 +233,7 @@ def log_master(msg_queue, log_filename=None, debug_filename=None, append_log=Tru
         print("done with logging, closing file", file=debugfile)
         debugfile.close()
 
-    print("queue handler closed")
+    # print("queue handler closed")
 
 
 
