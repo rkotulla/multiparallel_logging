@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "multiparlog"
-version = "1.0.8"
+version = "1.0.9"
 authors = [
   { name="Ralf Kotulla", email="ralf.kotulla@gmail.com" },
 ]
